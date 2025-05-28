@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:5173/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh"
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="./Vite + React_files/client"></script>
+
+    
+    <link rel="icon" type="image/svg+xml" href="http://localhost:5173/vite.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vite + React</title>
+  <style type="text/css" data-vite-dev-id="C:/Users/hp/Desktop/Web Assignment/Dashboard/src/index.css">:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/hp/Desktop/Web Assignment/Dashboard/src/App.css">* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f4fa;
+}
+
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 16%;
+  background-color: #fff;
+  padding: 2rem 1rem;
+  box-shadow: 2px 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard {
+  width: 56%;
+  padding: 2rem;
+}
+
+.schedule {
+  width: 28%;
+  padding: 2rem;
+  background-color: #fefefe;
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/hp/Desktop/Web Assignment/Dashboard/src/Component/Sidebar.css">/* Sidebar.css */
+.sidebar {
+  width: 220px;
+  background-color: #ffffff;
+  padding: 2rem 1rem;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sidebar h2 {
+  color: #2f80ed;
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+.sidebar nav a {
+  display: block;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  color: #333;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+.sidebar nav a:hover {
+  background-color: #f0f4fa;
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/hp/Desktop/Web Assignment/Dashboard/src/Component/Dashboard.css">/* src/Component/Dashboard.css */
+
+.dashboard {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.dashboard-body {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap; /* ensures responsiveness */
+  margin-bottom: 2rem;
+}
+
+.human-body {
+  max-width: 300px;
+  flex: 1;
+}
+
+.body-img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.status-cards-horizontal {
+  display: gird;
+  flex-direction: column; /* vertical stack by default */
+  gap: 10rem;
+  flex: 1;
+}
+
+@media (min-width: 768px) {
+  .status-cards-horizontal {
+    flex-direction: row; /* horizontal on larger screens */
+    justify-content: space-between;
+  }
+}
+
+.status-card {
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #eef3fa;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  font-weight: bold;
+  color: #333;
+  flex: 1;
+  text-align: center;
+}
+
+
+
+</style><style type="text/css" data-vite-dev-id="C:/Users/hp/Desktop/Web Assignment/Dashboard/src/Component/ActivityChart.css">/* ActivityChart.css */
+.activity-chart {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.activity-chart h4 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: #2d2d2d;
+}
+
+.chart-bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  height: 100px;
+}
+
+.chart-bar {
+  width: 12px;
+  background-color: #2f80ed;
+  border-radius: 4px 4px 0 0;
+}
+
+.chart-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: #666;
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/hp/Desktop/Web Assignment/Dashboard/src/Component/Schedule.css">/* Schedule.css */
+.schedule {
+  background-color: #ffffff;
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.schedule h4 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: #2d2d2d;
+}
+
+.schedule-item {
+  background-color: #eef4ff;
+  border-left: 4px solid #2f80ed;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+.schedule-item span {
+  display: block;
+  font-size: 0.85rem;
+  color: #555;
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/hp/Desktop/Web Assignment/Dashboard/src/Component/Calendar.css">/* src/Component/Calendar.css */
+.calendar {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 350px;
+}
+
+.calendar h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #333;
+  text-align: center;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+}
+
+.calendar-day {
+  text-align: center;
+  font-weight: bold;
+  color: #888;
+  font-size: 0.85rem;
+}
+
+.calendar-date {
+  text-align: center;
+  background-color: #f0f4fa;
+  border-radius: 8px;
+  padding: 0.5rem 0;
+  font-size: 0.9rem;
+  color: #333;
+  transition: background-color 0.2s;
+}
+
+.calendar-date:hover {
+  background-color: #d9e8fc;
+  cursor: pointer;
+}
+</style></head>
+  <body>
+    <div id="root"><div class="app-container"><div class="sidebar"><h2 style="font-weight: bold; color: rgb(13, 110, 253); margin-bottom: 2rem;">Health<span style="color: rgb(0, 0, 0);">care.</span></h2><ul style="list-style: none; padding: 0px;"><li style="margin: 1rem 0px; color: rgb(85, 85, 85); cursor: pointer;">Dashboard</li><li style="margin: 1rem 0px; color: rgb(85, 85, 85); cursor: pointer;">History</li><li style="margin: 1rem 0px; color: rgb(85, 85, 85); cursor: pointer;">Calendar</li><li style="margin: 1rem 0px; color: rgb(85, 85, 85); cursor: pointer;">Appointments</li><li style="margin: 1rem 0px; color: rgb(85, 85, 85); cursor: pointer;">Statistics</li><li style="margin: 1rem 0px; color: rgb(85, 85, 85); cursor: pointer;">Chat</li><li style="margin: 1rem 0px; color: rgb(85, 85, 85); cursor: pointer;">Support</li><li style="margin: 1rem 0px; color: rgb(85, 85, 85); cursor: pointer;">Setting</li></ul></div><div class="dashboard"><h3>Dashboard</h3><div class="dashboard-body"><div class="human-body"><img alt="Human Body" class="body-img" src="./Vite + React_files/body.jpg"></div><div class="status-cards-horizontal"><div class="status-card lungs">🫁 Lungs - Critical</div><div class="status-card teeth">🦷 Teeth - Healthy</div><div class="status-card bone">🦴 Bone - Weak</div></div></div><div class="activity-chart"><h3>Activity</h3><p class="subtitle">3 appointments this week</p><div class="chart-bars"><div class="bar-group"><div class="bar" title="50 units" style="height: 50px;"></div><span class="bar-label">Mon</span></div><div class="bar-group"><div class="bar" title="80 units" style="height: 80px;"></div><span class="bar-label">Tue</span></div><div class="bar-group"><div class="bar" title="65 units" style="height: 65px;"></div><span class="bar-label">Wed</span></div><div class="bar-group"><div class="bar" title="90 units" style="height: 90px;"></div><span class="bar-label">Thu</span></div><div class="bar-group"><div class="bar" title="45 units" style="height: 45px;"></div><span class="bar-label">Fri</span></div><div class="bar-group"><div class="bar" title="75 units" style="height: 75px;"></div><span class="bar-label">Sat</span></div><div class="bar-group"><div class="bar" title="60 units" style="height: 60px;"></div><span class="bar-label">Sun</span></div></div></div></div><div class="schedule"><h3>Upcoming Schedule</h3><div style="margin-top: 1rem;"><p>🦷 Dentist – 09:00 - 11:00</p><p>🏋️‍♂️ Physiotherapy – 11:00 - 12:00</p><p>👁 Ophthalmologist – 14:00</p><p>❤️ Cardiologist – 12:00 (Sat)</p></div></div><div class="calendar"><h4>October 2025</h4><div class="calendar-grid"><div class="calendar-day">Sun</div><div class="calendar-day">Mon</div><div class="calendar-day">Tue</div><div class="calendar-day">Wed</div><div class="calendar-day">Thu</div><div class="calendar-day">Fri</div><div class="calendar-day">Sat</div><div class="calendar-date">1</div><div class="calendar-date">2</div><div class="calendar-date">3</div><div class="calendar-date">4</div><div class="calendar-date">5</div><div class="calendar-date">6</div><div class="calendar-date">7</div><div class="calendar-date">8</div><div class="calendar-date">9</div><div class="calendar-date">10</div><div class="calendar-date">11</div><div class="calendar-date">12</div><div class="calendar-date">13</div><div class="calendar-date">14</div><div class="calendar-date">15</div><div class="calendar-date">16</div><div class="calendar-date">17</div><div class="calendar-date">18</div><div class="calendar-date">19</div><div class="calendar-date">20</div><div class="calendar-date">21</div><div class="calendar-date">22</div><div class="calendar-date">23</div><div class="calendar-date">24</div><div class="calendar-date">25</div><div class="calendar-date">26</div><div class="calendar-date">27</div><div class="calendar-date">28</div><div class="calendar-date">29</div><div class="calendar-date">30</div></div></div></div></div>
+    <script type="module" src="./Vite + React_files/main.jsx"></script>
+  
+
+</body></html>

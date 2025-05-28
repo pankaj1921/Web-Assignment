@@ -1,0 +1,45 @@
+/* src/Component/Calendar.css */
+.calendar {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 350px;
+}
+
+.calendar h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #333;
+  text-align: center;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+}
+
+.calendar-day {
+  text-align: center;
+  font-weight: bold;
+  color: #888;
+  font-size: 0.85rem;
+}
+
+.calendar-date {
+  text-align: center;
+  background-color: #f0f4fa;
+  border-radius: 8px;
+  padding: 0.5rem 0;
+  font-size: 0.9rem;
+  color: #333;
+  transition: background-color 0.2s;
+}
+
+.calendar-date:hover {
+  background-color: #d9e8fc;
+  cursor: pointer;
+}

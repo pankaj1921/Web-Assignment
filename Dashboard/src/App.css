@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f4fa;
+}
+
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+
+
+.sidebar {
+  width: 16%;
+  background-color: #fff;
+  padding: 2rem 1rem;
+  box-shadow: 2px 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard {
+  width: 56%;
+  padding: 2rem;
+}
+
+.schedule {
+  width: 28%;
+  padding: 2rem;
+  background-color: #fefefe;
+}

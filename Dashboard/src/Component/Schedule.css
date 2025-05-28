@@ -1,0 +1,29 @@
+/* Schedule.css */
+.schedule {
+  background-color: #ffffff;
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.schedule h4 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: #2d2d2d;
+}
+
+.schedule-item {
+  background-color: #eef4ff;
+  border-left: 4px solid #2f80ed;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+.schedule-item span {
+  display: block;
+  font-size: 0.85rem;
+  color: #555;
+}

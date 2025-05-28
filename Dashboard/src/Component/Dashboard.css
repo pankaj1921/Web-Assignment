@@ -1,0 +1,56 @@
+/* src/Component/Dashboard.css */
+
+.dashboard {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.dashboard-body {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap; /* ensures responsiveness */
+  margin-bottom: 2rem;
+}
+
+.human-body {
+  max-width: 300px;
+  flex: 1;
+}
+
+.body-img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.status-cards-horizontal {
+  display: gird;
+  flex-direction: column; /* vertical stack by default */
+  gap: 10rem;
+  flex: 1;
+}
+
+@media (min-width: 768px) {
+  .status-cards-horizontal {
+    flex-direction: row; /* horizontal on larger screens */
+    justify-content: space-between;
+  }
+}
+
+.status-card {
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #eef3fa;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  font-weight: bold;
+  color: #333;
+  flex: 1;
+  text-align: center;
+}
+
+
+
