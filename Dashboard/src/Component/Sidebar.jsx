@@ -13,7 +13,7 @@ function Sidebar() {
             {item}
           </li>
         ))}
-      </ul>
+      </ul> 
     </div>
   );
 }
